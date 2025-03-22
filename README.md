@@ -1,6 +1,6 @@
 # GigaChat PHP SDK
 
-[![Latest Stable Version](https://poser.pugx.org/edvardpotter/gigachat-php-sdk/v?style=for-the-badge)](https://packagist.org/packages/edvardpotter/gigachat-php-sdk) [![Total Downloads](https://poser.pugx.org/edvardpotter/gigachat-php-sdk/downloads?style=for-the-badge)](https://packagist.org/packages/edvardpotter/gigachat-php-sdk) [![Latest Unstable Version](https://poser.pugx.org/edvardpotter/gigachat-php-sdk/v/unstable?style=for-the-badge)](https://packagist.org/packages/edvardpotter/gigachat-php-sdk) [![License](https://poser.pugx.org/edvardpotter/gigachat-php-sdk/license?style=for-the-badge)](https://packagist.org/packages/edvardpotter/gigachat-php-sdk) [![PHP Version Require](https://poser.pugx.org/edvardpotter/gigachat-php-sdk/require/php?style=for-the-badge)](https://packagist.org/packages/edvardpotter/gigachat-php-sdk)
+[![Latest Stable Version](https://poser.pugx.org/zullusa/gigachat-php-sdk/v?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk) [![Total Downloads](https://poser.pugx.org/zullusa/gigachat-php-sdk/downloads?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk) [![Latest Unstable Version](https://poser.pugx.org/zullusa/gigachat-php-sdk/v/unstable?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk) [![License](https://poser.pugx.org/zullusa/gigachat-php-sdk/license?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk) [![PHP Version Require](https://poser.pugx.org/zullusa/gigachat-php-sdk/require/php?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk)
 
 PHP API SDK для [GigaChat](https://developers.sber.ru/docs/ru/gigachat/overview/).
 
@@ -9,7 +9,7 @@ PHP API SDK для [GigaChat](https://developers.sber.ru/docs/ru/gigachat/overvi
 Установите последнюю версию
 
 ```bash
-$ composer require edvardpotter/gigachat-php-sdk
+$ composer require zullusa/gigachat-php-sdk
 ```
 
 ## Требования
@@ -24,11 +24,11 @@ PHP >= 7.4
 
 require 'vendor/autoload.php';
 
-use Edvardpotter\GigaChat\GigaChat;
-use Edvardpotter\GigaChat\GigaChatDialog;
-use Edvardpotter\GigaChat\GigaChatOAuth;
-use Edvardpotter\GigaChat\Type\Message;
-use Edvardpotter\GigaChat\Type\Model;
+use zullusa\GigaChat\GigaChat;
+use zullusa\GigaChat\GigaChatDialog;
+use zullusa\GigaChat\GigaChatOAuth;
+use zullusa\GigaChat\Type\Message;
+use zullusa\GigaChat\Type\Model;
 
 // https://gu-st.ru/content/Other/doc/russiantrustedca.pem
 $cert = __DIR__ . '/russiantrustedca.pem';
