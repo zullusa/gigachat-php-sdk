@@ -1,5 +1,5 @@
 {
-    "name": "edvardpotter/gigachat-php-sdk",
+    "name": "zullusa/gigachat-php-sdk",
     "description": "GigaChat API SDK for PHP projects",
     "keywords": [
         "gigachat",
@@ -13,13 +13,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Edvardpotter\\GigaChat\\": "src/"
+            "zullusa\\GigaChat\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "edvardpotter",
-            "email": "eduard1997@bk.ru"
+            "name": "zullusa",
+            "email": "zullusa@gmail.com"
         }
     ],
     "require": {
