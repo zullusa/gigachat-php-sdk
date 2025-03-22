@@ -20,7 +20,29 @@ class GigaChat
     private string $authToken;
     private ?ClientInterface $client;
 
-    public static function getInstance(
+    public static function withClientAndSecret(
+        string           $client_id,
+        string           $client_secret,
+                         $cert,
+        ?ClientInterface $client = null
+    )
+    {
+        $oauthClient = new GigaChatOAuth(
+            $client_id,
+            $client_secret,
+            $cert, // false для отключения проверки сертификата
+            client: $client
+        );
+
+        $accessToken = $oauthClient->getAccessToken();
+
+        return new GigaChat(
+            $accessToken->getAccessToken(),
+            $cert
+        );
+    }
+
+    public static function withApiKey(
         string           $apiKey,
                          $cert,
         ?ClientInterface $client = null

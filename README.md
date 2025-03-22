@@ -1,7 +1,6 @@
 # GigaChat PHP SDK
 
 [![Latest Stable Version](https://poser.pugx.org/zullusa/gigachat-php-sdk/v?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk) [![Total Downloads](https://poser.pugx.org/zullusa/gigachat-php-sdk/downloads?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk) [![Latest Unstable Version](https://poser.pugx.org/zullusa/gigachat-php-sdk/v/unstable?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk) [![License](https://poser.pugx.org/zullusa/gigachat-php-sdk/license?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk) [![PHP Version Require](https://poser.pugx.org/zullusa/gigachat-php-sdk/require/php?style=for-the-badge)](https://packagist.org/packages/zullusa/gigachat-php-sdk)
-
 PHP API SDK для [GigaChat](https://developers.sber.ru/docs/ru/gigachat/overview/).
 
 ## Установка
@@ -14,7 +13,7 @@ $ composer require zullusa/gigachat-php-sdk
 
 ## Требования
 
-PHP >= 7.4
+PHP >= 8.0
 
 ## Как использовать
 
@@ -33,19 +32,10 @@ use zullusa\GigaChat\Type\Model;
 // https://gu-st.ru/content/Other/doc/russiantrustedca.pem
 $cert = __DIR__ . '/russiantrustedca.pem';
 
-$oauthClient = new GigaChatOAuth(
-    'client_id',
-    'client_secret',
-    $cert // false для отключения проверки сертификата
-);
+const GIGACHAT_API_KEY = '';
 
-// Получить токена
-$accessToken = $oauthClient->getAccessToken();
-echo $accessToken->getAccessToken();
-echo $accessToken->isExpired();
-
-$gigaChat = new GigaChat(
-    $accessToken->getAccessToken(),
+$gigaChat = GigaChat::withApiKey(
+    GIGACHAT_API_KEY,
     $cert
 );
 
