@@ -17,6 +17,17 @@ class GigaChatOAuth
     private string $scope;
     private ?ClientInterface $client = null;
 
+    public static function withApiKey(
+        string           $apiKey,
+                         $cert,
+        string           $scope = 'GIGACHAT_API_PERS',
+        ?ClientInterface $client = null
+    )
+    {
+        $authInfo = explode(':', base64_decode($apiKey));
+        return new GigaChatOAuth($authInfo[0], $authInfo[1], $cert, $scope, $client);
+    }
+
     public function __construct(
         string           $clientId,
         string           $clientSecret,
