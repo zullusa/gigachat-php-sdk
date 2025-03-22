@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Edvardpotter\GigaChat;
+namespace zullusa\GigaChat;
 
-use Edvardpotter\GigaChat\Type\Message;
-use Edvardpotter\GigaChat\Type\Model;
+use zullusa\GigaChat\Type\Message;
+use zullusa\GigaChat\Type\Model;
 
 class GigaChatDialog
 {
