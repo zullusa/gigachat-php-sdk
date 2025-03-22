@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Edvardpotter\GigaChat;
+namespace zullusa\GigaChat;
 
-use Edvardpotter\GigaChat\Type\AccessToken;
+use zullusa\GigaChat\Type\AccessToken;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
